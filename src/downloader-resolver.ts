@@ -6,5 +6,6 @@ export async function getDownloaderForSystem(): Promise<Downloader<any>> {
   // ".electron.downloader" which would be a text file with the name of the
   // npm module to import() and use as the downloader
   const { GotDownloader } = await import('./GotDownloader');
+  console.log('WTF WTF WTF');
   return new GotDownloader();
 }
